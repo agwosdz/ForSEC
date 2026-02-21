@@ -7,12 +7,6 @@ dependencies = [
     "torch==2.8.0",
     "torchvision",
     "torchaudio",
-    "flash_attn@ https://huggingface.co/MonsterMMORPG/Wan_GGUF/resolve/main/flash_attn-2.8.2-cp310-cp310-win_amd64.whl ; sys_platform == 'win32'",
-    "flash_attn@ https://huggingface.co/MonsterMMORPG/Wan_GGUF/resolve/main/flash_attn-2.8.2-cp310-cp310-linux_x86_64.whl ; sys_platform == 'linux'",
-    "xformers@ https://huggingface.co/MonsterMMORPG/Wan_GGUF/resolve/main/xformers-0.0.33+c159edc0.d20250906-cp39-abi3-win_amd64.whl ; sys_platform == 'win32'",
-    "xformers@ https://huggingface.co/MonsterMMORPG/Wan_GGUF/resolve/main/xformers-0.0.33+c159edc0.d20250906-cp39-abi3-linux_x86_64.whl ; sys_platform == 'linux'",
-    "sageattention@ https://huggingface.co/MonsterMMORPG/Wan_GGUF/resolve/main/sageattention-2.2.0-cp39-abi3-linux_x86_64.whl ; sys_platform == 'linux'",
-    "sageattention@ https://huggingface.co/MonsterMMORPG/Wan_GGUF/resolve/main/sageattention-2.2.0-cp39-abi3-win_amd64.whl ; sys_platform == 'win32'",
     "triton-windows<3.5 ; sys_platform == 'win32'",
     "hf_xet",
     "gradio==5.50.0",
@@ -56,9 +50,6 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.hatch.metadata]
-allow-direct-references = true
 
 [[tool.uv.index]]
 name = "pytorch-cu129"

@@ -1,0 +1,31 @@
+# Core dependencies
+flask>=2.3.0
+requests==2.31.0
+numpy>=1.24,<2.0
+
+# Database
+sqlalchemy[asyncio]>=2.0
+psycopg2-binary>=2.9.6
+
+# With environment markers
+pywin32>=306 ; sys_platform == "win32"
+uvloop>=0.17.0 ; sys_platform != "win32"
+
+# Editable / VCS
+-e git+https://github.com/user/mylib.git#egg=mylib
+
+# PyTorch from custom CUDA index
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# Another extra index (generic)
+--extra-index-url https://my-company.jfrog.io/artifactory/api/pypi/pypi-local/simple/
+
+# Pip options (should be skipped)
+--trusted-host my-company.jfrog.io
+
+# Pinned
+pydantic==2.5.3
+python-dotenv~=1.0

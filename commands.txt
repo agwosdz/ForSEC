@@ -1,0 +1,3 @@
+uv pip install --no-deps --extra-index-url https://miropsota.github.io/torch_packages_builder fairseq==0.12.2+d9a6270pt2.7.0cu128
+
+python Download_Song_Models.py --model songgen_large
